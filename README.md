@@ -1,10 +1,10 @@
-# tsecret
+# ts-redacted
 
-<!-- ![CI passing](https://github.com/Haberkamp/tsecret/actions/workflows/ci.yml/badge.svg?event=push&branch=main) -->
+<!-- ![CI passing](https://github.com/Haberkamp/ts-redacted/actions/workflows/ci.yml/badge.svg?event=push&branch=main) -->
 
 ![Created by](https://img.shields.io/badge/created%20by-@n__haberkamp-065afa.svg)
 
-![NPM License](https://img.shields.io/npm/l/tsecret)
+![NPM License](https://img.shields.io/npm/l/ts-redacted)
 
 ## Overview
 
@@ -34,7 +34,7 @@ Hey, I'm Nils. In my spare time [I write about things I learned](https://www.hab
 You can install this package with any package manager you like.
 
 ```bash
-pnpm add tsecret
+pnpm add ts-redacted
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ pnpm add tsecret
 ### Creating Redacted Values
 
 ```ts
-import { Redacted } from "tsecret";
+import { Redacted } from "ts-redacted";
 
 const secret = Redacted.make("my-secret-api-key");
 const password = Redacted.make(process.env.PASSWORD);
@@ -75,7 +75,7 @@ JSON.stringify({ key: secret }); // '{"key":"<redacted>"}'
 ### Type Safety
 
 ```ts
-import { Redacted, Value } from "tsecret";
+import { Redacted, Value } from "ts-redacted";
 
 // Type inference works correctly
 const secret = Redacted.make("my-secret-api-key");
@@ -105,4 +105,4 @@ Redacted.make([1, 2, 3]);
 
 ## Feedback and Contributing
 
-I highly appreciate your feedback! Please create an [issue](https://github.com/Haberkamp/tsecret/issues/new), if you've found any bugs or want to request a feature.
+I highly appreciate your feedback! Please create an [issue](https://github.com/Haberkamp/ts-redacted/issues/new), if you've found any bugs or want to request a feature.
